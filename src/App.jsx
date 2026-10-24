@@ -1,16 +1,26 @@
-import HolaMundo from "./componentsClase/HolaMundo"
-import Saludo from "./componentsClase/Saludo"
-import Despedida from "./componentsClase/Despedida"
+
+import Perfil from './proyectoClase/Perfil';
+import Titulos from './proyectoClase/Titulos';
+import Footer from './proyectoClase/Footer';
 
 function App() {
-
   return (
-    <div>
-      <HolaMundo />
-      <Saludo />
-      <Despedida />
+    <div className="container-fluid p-0">
+      <div className="row g-0">
+        <div className="col-12">
+          <Perfil />
+        </div>
+
+        <div className="col-12">
+          <Titulos />
+        </div>
+
+        <div className="col-12">
+          <Footer />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
